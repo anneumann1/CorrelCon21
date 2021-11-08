@@ -103,4 +103,4 @@ hg<-
 
 ##Put everything together
 library("patchwork")
-hh+inset_element(hg, left = 0.3, bottom = 0.7, right = .1, top =.98)
+hh+inset_element(hg, left = .3, bottom = .7, right = .1, top =.98)
