@@ -76,3 +76,31 @@ stationen<-intersectionsii%>%
 ##rename NAs
 stationen$cat[is.na(stationen$cat)] <- "pedestrian"
 
+# Add mini-chart
+hg<-
+  ggplot(stationen)+
+  geom_bar(mapping=aes(reorder(cat,-freq),freq,fill=cat),stat="identity",width=.25)+
+  scale_fill_manual(name="Category:",values=c("green space"="seagreen4","residential" ="seashell4", "pedestrian"="orange","business"="deeppink3", "agriculture"="red4"),guide="none")+
+ # geom_text(mapping=aes(reorder(cat,-freq),freq,label = cat),colour = "#00101f", size = 4,hjust = 2.5)+
+  geom_text(mapping=aes(reorder(cat,-freq),freq,label = scales::percent(freq)),colour = "white", size = 4,hjust = -.5)+
+  labs(subtitle = "and where they are located")+
+  theme(plot.background = element_rect("#00101f"),
+        legend.background = element_rect("#00101f"),
+        axis.title = element_blank(),
+        axis.title.y = element_blank(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        panel.background = element_rect("#00101f"),
+        legend.text = element_text(color = "white"),
+        legend.title = element_text(color = "white"),
+        legend.position = "none",
+        text=element_text(family="Times New Roman", face="bold", size=21),
+        plot.subtitle=element_text(size=10, hjust=0.5, face="italic", color="white"),
+        plot.title = element_text(color="grey85",hjust=.5, face="italic"))+
+  coord_flip()
+
+##Put everything together
+library("patchwork")
+hh+inset_element(hg, left = 0.3, bottom = 0.7, right = .1, top =.98)
