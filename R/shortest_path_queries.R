@@ -42,21 +42,21 @@ lines_between_stations <- st_set_crs(lines_between_stations, 4326)
 
 # too much data on the map otherwise
 lines_between_stations_sampled <- lines_between_stations %>% 
-  slice_sample(prop=0.01) 
+  slice_sample(prop=0.1) 
 
 glimpse(lines_between_stations_sampled)
 # SHORTEST PATHS WITH CYCLESTREETS API -----------------------------------------
-token <- "372a7ee582db962a" # you need to apply for an API token here: https://www.cyclestreets.net/api/apply/
+token <- "" # you need to apply for an API token here: https://www.cyclestreets.net/api/apply/
 
 # use cyclestreets.net API to get shortest bicycle route for each station-pair
 # source: https://geocompr.robinlovelace.net/transport.html
 shortest_cycle_paths <- line2route(
-  lines_between_stations, # dataset with coordinate pairs
+  lines_between_stations_sampled, # (small) dataset with coordinate pairs, it's slow!
   route_fun = stplanr::route_cyclestreets,
   pat = token
 )
 
 # add shortest paths to existing dataframe
-lines_between_stations$geom_bike <- st_geometry(shortest_cycle_paths)
+lines_between_stations_sampled <- st_set_geometry(lines_between_stations_sampled,st_geometry(shortest_cycle_paths))
 # SAVE -----------------------------------------------------------------------
-saveRDS(lines_between_stations, "/home/jaezzy/Documents/Projects/CorrelCon21/data/paths_street_direct.rds")
+saveRDS(lines_between_stations_sampled, "/home/jaezzy/Documents/Projects/CorrelCon21/data/paths_street_direct_sampled.rds")
