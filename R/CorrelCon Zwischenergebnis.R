@@ -12,8 +12,7 @@ library(stringr)
 bikeshare_station <- read.csv("https://raw.githubusercontent.com/anneumann1/correlaid-hackathon-spatialdata/main/data/bikeshare_stations_hh.csv")
 options( "encoding" = "UTF-8" )
 bikeshare_trips_hh <- read.csv("https://raw.githubusercontent.com/anneumann1/correlaid-hackathon-spatialdata/main/data/bikeshare_trips_hh.csv", encoding="UTF-8")
-paths <- read.csv("https://raw.githubusercontent.com/anneumann1/correlaid-hackathon-spatialdata/main/data/bikeshare_stations_hh.csv")
-
+lines_between_stations_sampled <- readRDS("/home/jaezzy/Documents/Projects/CorrelCon21/data/paths_street_direct_sampled.rds")
 
 land_use<- readRDS("/home/jaezzy/Documents/Projects/CorrelCon21/data/land_use.Rds") # wie einlesen?
 land_use<- st_set_crs(land_use, 4326)
