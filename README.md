@@ -7,4 +7,10 @@ This is the repository containing code and data used in the hands-on session "In
 - Landuse: Openstreetmap data downloaded for Hamburg from [Geofabrik Download Server](https://download.geofabrik.de/europe/germany/hamburg.html)
 - Shortest paths between stations: Extracted from [CycleStreetsAPI](https://www.cyclestreets.net/api/) using Rpackage "[cyclestreets](https://cran.r-project.org/web/packages/cyclestreets/index.html)"
 
+
+
+![CorrelCon final](https://user-images.githubusercontent.com/68635246/141016069-fbaa8322-9e25-4fa7-9f8c-161fdf308010.png)
+
+
+
 Note: All data sources were already slightly prepared & cleaned and sampled for easier plotting, contact us for details. 
