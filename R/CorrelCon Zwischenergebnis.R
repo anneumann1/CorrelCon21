@@ -53,16 +53,19 @@ hh<-
         plot.subtitle=element_text(size=10, hjust=0.5, face="italic", color="white"),
         plot.title = element_text(color="grey85",hjust=.5, face="italic"))
 
-##Create buffers around Polygons using metric system
-buffers<-st_transform(land_use, CRS("+init=epsg:3068 +datum=WGS84 +units=m"))
+##Projections
 bikeshare_station<-bikeshare_station%>%
   st_as_sf(coords = c("lon", "lat"))
+
+bikeshare_station<-bikeshare_station  %>% st_set_crs(4326) %>% st_transform(4326)
+
+##Create buffers around Polygons using metric system
+buffers<-st_transform(land_use, CRS("+init=epsg:3068 +datum=WGS84 +units=m"))
 
 ##Add 12meter buffer
 buffers<- st_buffer(buffers, 12)
 
 buffers<- buffers%>% st_transform(4326) 
-
 
 ##Find out which bike-station is located where
 intersectionsii<-st_join(bikeshare_station,buffers)
