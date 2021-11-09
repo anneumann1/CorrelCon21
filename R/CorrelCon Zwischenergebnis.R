@@ -5,6 +5,7 @@ library(dplyr)
 library(ggforce)
 library(scales)
 library(glue)
+library("patchwork")
 
 ##load data set
 
@@ -103,5 +104,5 @@ hg<-
   coord_flip()
 
 ##Put everything together
-library("patchwork")
+
 hh+inset_element(hg, left = .3, bottom = .7, right = .1, top =.98)
