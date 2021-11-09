@@ -31,27 +31,27 @@ loadfonts(device="win")
 
 hh<-
   ggplot()+
-  #  geom_sf(subset(land_use, !is.na(cat)),mapping=aes(col=cat,fill=cat))+
-  geom_sf(land_use,mapping=aes(fill=cat,col=cat))+
-  geom_point(bikeshare_station,mapping=aes(x=lon,y=lat),col="#ffffff",shape = 4,size=2)+
-  labs(title = "HAMBURGs",subtitle = "bike-station locations")+
-  scale_fill_manual(name="Category:",values=c("green space"="seagreen4","residential" ="seashell4", "agriculture"="red4","pedestrian"="yellow","business"="deeppink3"))+
+  geom_sf(land_use,mapping=aes(fill=cat,col=cat),alpha = .4)+
+  geom_point(bikeshare_station,mapping=aes(x=lon,y=lat),col="white",shape = 4,size=2,alpha=5)+
+  geom_sf(paths_street_direct_sampled,mapping=aes(geometry=geom_bike),col=alpha("white",5))+
+  labs(title = "HAMBURG´s",subtitle = "most prominent routes\n for shared bike users")+
+  scale_fill_manual(name="Category:",values=c("green space"="seagreen4","residential" ="seashell4", "agriculture"="red4","pedestrian"="orange","business"="deeppink3"))+
   scale_color_manual(values=c("green space"="seagreen4","residential" ="seashell4", "agriculture"="red4","business"="deeppink3"), guide = "none")+
   theme(plot.background = element_rect("#00101f"),
         legend.background = element_rect("#00101f"),
+        
         axis.title = element_blank(),
         axis.title.y = element_blank(),
         panel.grid.major = element_blank(),
         axis.text = element_blank(),
         axis.ticks = element_blank(),
         panel.background = element_rect("#00101f"),
-        legend.text = element_text(color = "white"),
-        legend.title = element_text(color = "white"),
- #       panel.border = element_rect(colour = "grey85", fill=NA, size=8),
+        legend.text = element_text(color = "white",face="italic"),
+        legend.title = element_text(color = "white",face="italic"),
         legend.position = "bottom",
         text=element_text(family="Times New Roman", face="bold", size=21),
-        plot.subtitle=element_text(hjust=0.5, face="italic", color="white",size=12),
-        plot.title = element_text(color="grey85",hjust=.5, face="italic",size=20))
+        plot.subtitle=element_text(size=12, hjust=0.5, face="italic", color="white"),
+        plot.title = element_text(color="grey85",hjust=.5, face="italic")
 
 ##Projections
 bikeshare_station<-bikeshare_station%>%
@@ -82,11 +82,10 @@ stationen$cat[is.na(stationen$cat)] <- "pedestrian"
 # Add mini-chart
 hg<-
   ggplot(stationen)+
-  geom_bar(mapping=aes(reorder(cat,-freq),freq,fill=cat),stat="identity",width=.25)+
+  geom_bar(mapping=aes(reorder(cat,-freq),freq,fill=cat),stat="identity",width=.25,alpha=.4)+
   scale_fill_manual(name="Category:",values=c("green space"="seagreen4","residential" ="seashell4", "pedestrian"="orange","business"="deeppink3", "agriculture"="red4"),guide="none")+
- # geom_text(mapping=aes(reorder(cat,-freq),freq,label = cat),colour = "#00101f", size = 4,hjust = 2.5)+
   geom_text(mapping=aes(reorder(cat,-freq),freq,label = scales::percent(freq)),colour = "white", size = 4,hjust = -.5)+
-  labs(subtitle = "and where they are located")+
+  labs(subtitle = "where the bike-stations are located")+
   theme(plot.background = element_rect("#00101f"),
         legend.background = element_rect("#00101f"),
         axis.title = element_blank(),
