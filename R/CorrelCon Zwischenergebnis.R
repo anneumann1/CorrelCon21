@@ -52,7 +52,7 @@ hh<-
         legend.position = "bottom",
         text=element_text(family="Times New Roman", face="bold", size=21),
         plot.subtitle=element_text(size=12, hjust=0.5, face="italic", color="white"),
-        plot.title = element_text(color="grey85",hjust=.5, face="italic")
+        plot.title = element_text(color="grey85",hjust=.5, face="italic"))
 
 ##Projections
 bikeshare_station<-bikeshare_station%>%
