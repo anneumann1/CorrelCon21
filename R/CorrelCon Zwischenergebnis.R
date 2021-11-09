@@ -47,7 +47,7 @@ hh<-
         panel.background = element_rect("#00101f"),
         legend.text = element_text(color = "white"),
         legend.title = element_text(color = "white"),
-        panel.border = element_rect(colour = "grey85", fill=NA, size=8),
+ #       panel.border = element_rect(colour = "grey85", fill=NA, size=8),
         legend.position = "bottom",
         text=element_text(family="Times New Roman", face="bold", size=21),
         plot.subtitle=element_text(hjust=0.5, face="italic", color="white",size=15),
