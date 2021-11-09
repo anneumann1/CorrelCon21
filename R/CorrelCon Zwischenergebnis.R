@@ -50,7 +50,7 @@ hh<-
         panel.border = element_rect(colour = "grey85", fill=NA, size=8),
         legend.position = "bottom",
         text=element_text(family="Times New Roman", face="bold", size=21),
-        plot.subtitle=element_text(size=10, hjust=0.5, face="italic", color="white",size=15),
+        plot.subtitle=element_text(hjust=0.5, face="italic", color="white",size=15),
         plot.title = element_text(color="grey85",hjust=.5, face="italic",size=20))
 
 ##Projections
