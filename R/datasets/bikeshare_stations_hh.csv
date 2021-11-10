@@ -1,0 +1,209 @@
+station_id,name,lat,lon
+131543,Landungsbrücke/Hafentor,53.5457,9.9723
+131546,Fischmarkt/Breite Straße,53.5462,9.95088
+131547,Paulinenplatz/Wohlwillstraße,53.5542,9.96246
+131639,Burgstraße/Hammer Landstraße,53.555693,10.041298
+131640,Innocentiapark/Oberstraße,53.577248,9.98211
+131641,Goebenstraße/Eppendorfer Weg,53.577579,9.963063
+131642,Osterstraße/Bismarckstraße,53.573183,9.962395
+131643,Christuskirche/Fruchtallee,53.5695,9.96309
+131644,Eimsbütteler Straße/Waterloostraße,53.5662,9.9534
+131645,Ottenser Marktplatz/Museumsstraße,53.547905,9.934844
+131646,Bahnhof Altona Ost/Max-Brauer-Allee,53.552121,9.936005
+131647,Kurze Mühren/Spitalerstraße,53.552611,10.00415
+131648,Schulterblatt/Eifflerstraße,53.562709,9.96099
+131649,Große Bergstraße / Jessenstraße,53.5512,9.94576
+131650,Königstraße / Struenseestraße,53.5471,9.94241
+131651,Kurt-Schumacher-Allee / Nagelsweg,53.5517,10.016
+131652,Berliner Tor / Berlinertordamm,53.5533,10.0246
+131653,Zentralbibliothek / Münzstraße,53.550332,10.008849
+131654,Steinstraße / Deichtorplatz,53.548562,10.005325
+131872,Hauptbahnhof West / Glockengießer Wall,53.553676,10.004553
+131873,Hauptbahnhof Ost / Hachmannplatz,53.554307,10.007652
+131875,Jacobikirche / Steinstraße,53.5503,10.0015
+131877,Meßberg / Willy-Brandt-Straße,53.547805,9.998774
+131879,Jungfernstieg / Ballindamm,53.552244,9.995501
+131880,Mönckebergstraße / Rosenstraße,53.550722,9.99714
+131881,Universität / Schlüterstraße,53.566972,9.986076
+131882,Universität / Moorweidenstraße,53.563755,9.987659
+131883,Bahnhof Dammtor Nord // Theodor-Heuss-Platz,53.5614,9.99043
+131884,Gänsemarkt / Büschstraße,53.556282,9.990091
+131885,Rödingsmarkt / Großer Burstah,53.5483,9.98695
+131887,Enckeplatz / Hütten,53.5524,9.97695
+131888,Messehallen / Marktstraße,53.558518,9.975346
+131889,Bahnhof Altona West / Busbahnhof,53.5518,9.93387
+131890,Neuer Pferdemarkt / Beim Grünen Jäger,53.558869,9.963824
+131902,Reeperbahn / Königstraße,53.549501,9.954934
+131905,Millerntorplatz/St.Pauli,53.551,9.97033
+137994,Harvestehuder Weg / Alte Rabenstraße,53.5672,10.0011
+137995,Hallerstraße / Rohtenbaumchaussee,53.572081,9.988801
+138372,Uhlandstraße / Eingang Nord,53.565,10.0267
+138375,Lerchenfeld / Uferstraße,53.567,10.0318
+138376,Jarrestraße / Rambatzweg,53.584,10.0211
+138378,Hudtwalckerstraße / Bebelallee,53.5943,9.99575
+138379,Stadthausbrücke / Neuer Wall,53.549672,9.986594
+138380,Jungfernstieg / Neuer Jungfernstieg,53.555,9.9914
+138382,Bahnhof Dammtor Süd / Marseiller Straße,53.5602,9.98963
+138383,Kleine Rosenstraße / Gerhart-Hauptmann-Platz,53.5516,9.99843
+138384,Lange Reihe / Kirchenallee,53.5552,10.0082
+138385,Lange Reihe / Lohmühlenpark,53.5599,10.0149
+138386,Michaeliskirche / Krayenkamp,53.547975,9.97942
+138387,Mönckebergstraße / Steintorwall,53.5516,10.0054
+138389,Steindamm / Stralsunder Straße,53.554216,10.013306
+139498,Chemnitzstraße / Max-Brauer-Allee,53.5553,9.94286
+139501,Sternschanze / Eingang Dänenweg,53.564227,9.96925
+139508,Eppendorfer Baum / Isestraße,53.5832,9.98441
+140790,Hammerbrook / Sachsenfeld,53.546011,10.024042
+140791,Lohmühlenstraße / Steindamm,53.5572,10.0199
+140793,Martinistraße / Haupteingang Klinikum,53.588918,9.975715
+140794,Kümmellstraße / Robert-Koch-Straße,53.590237,9.98673
+140795,Kellinghusenstraße / Loogeplatz,53.588516,9.991125
+140796,Goldbekplatz / Semperstraße,53.5838,10.01
+140799,Mundsburg / Schürbeker Straße,53.5696,10.0271
+140800,Eduard-Rhein-Ufer / Schwanenwik,53.5677,10.0162
+140801,Wartenau / Lübecker Straße,53.5636,10.0341
+140802,Landwehr / Ramazan-Avci-Platz,53.561109,10.037022
+140803,Lübecker Straße / Marienkrankenhaus,53.5597,10.0285
+140804,Isestraße / Hoheluftbrücke,53.578,9.97721
+158204,Alter Wall/Adolphsbrücke,53.550193,9.99011
+163327,Axel-Springer-Platz/Wexstraße,53.551853,9.985161
+164033,Sievekingplatz/Gorch-Fock-Wall,53.556061,9.979697
+171372,Wilhelmsburger Platz/Zur Schleuse,53.522794,10.01481
+193238,Am Kaiserkai/Großer Grasbrook,53.541838,9.992856
+193381,Unilever/Strandkai,53.53958,9.99365
+196417,Bernhard-Nocht-Straße/Zirkusweg,53.54732,9.965669
+198077,Allende-Platz/Grindelhof,53.567845,9.982728
+198081,Alsterschwimmhalle/Ifflandstraße,53.560781,10.022148
+198086,Eppendorfer Weg/Hoheluftchaussee,53.581771,9.97172
+198088,Borgweg/Stadtpark,53.592022,10.015021
+199402,Mannesallee/Veringstraße,53.514265,9.987298
+200502,Hofweg/Am Langenzug,53.578035,10.013995
+201324,Methfesselstraße/Luruper Weg,53.58006,9.946786
+201326,Heußweg/Wiesenstraße,53.577796,9.953073
+201328,Süderfeldstraße/Universitätsklinikum Eppendorf,53.594,9.973
+201329,Osakaallee/Übersee Quartier,53.541583,9.999731
+203890,Saarlandstraße/Wiesendamm,53.588735,10.03268
+203892,Südring/Stadthallenbrücke,53.591446,10.030327
+204029,Dehnhaide/Barmbeker Markt,53.579981,10.041461
+204030,Wandsbeker Chaussee/Ritterstraße,53.567126,10.044484
+204031,Hasselbrookstraße/Papenstraße,53.564805,10.054679
+204032,Wandsbeker Marktstraße/Wandsbeker Marktplatz,53.572433,10.068955
+207304,Schloßstrasse/Schloßgarten,53.571664,10.068644
+207619,Uferstraße/Wagnerstraße,53.571078,10.039741
+208292,Winterhuder Weg/ Zimmerstraße,53.575308,10.02045
+208295,Krausestraße/Eilbektal,53.576238,10.058237
+208307,Schleidenstraße/Osterbekstraße,53.584582,10.03369
+211706,Alsenstraße/Düppelstraße,53.563037,9.948345
+211709,Bahrenfelder Straße/Völckersstraße,53.556897,9.927945
+211710,Eulenstraße/Große Brunnenstraße,53.550816,9.925653
+211711,Fischersallee/Bleickenallee,53.550966,9.92226
+211920,Billstraße/Billhorner Deich,53.540103,10.04287
+211921,Holsteinischer Kamp/ Wagnerstraße,53.574518,10.036608
+211922,Weidestraße/Biedermannplatz,53.5800038,10.033846
+211923,Bartholomäusstraße/Beim Alten Schützenhof,53.575652,10.02957
+212078,Bei der Hammer Kirche/Hammerpark,53.556699,10.055075
+212079,Eiffestrasse/Normannenweg,53.552123,10.030364
+212607,Wiesendamm/Roggenkamp,53.586958,10.042993
+213235,St.Petersburger Straße/Bei den Kirchhöfen,53.559762,9.981839
+213277,Großneumarkt/Thielbek,53.550977,9.980459
+213679,U-Bahn Schlump,53.567991,9.969601
+213680,Löwenstraße/Eppendorfer Weg,53.583795,9.977916
+213687,Überseering/Mexikoring,53.601619,10.024745
+213688,Planetarium/Hindenburgstraße,53.59595,10.01365
+213792,Koppelstraße/Lokstedter Grenzstraße,53.593587,9.943525
+213825,Emilienstraße/Fruchtallee,53.57169,9.953138
+213832,Domstraße/Willy-Brandt-Straße,53.547486,9.994057
+213833,Lortzingstraße/Friedrichsberger Straße,53.573588,10.049568
+213855,Bebelallee/Meenkwiese,53.599203,9.994017
+213856,Neumühlen/Övelgönne,53.544302,9.914731
+214170,U-Bahn Baumwall,53.544279,9.980896
+218173,Rothenburgsort/Marktplatz/Lindleystraße,53.534288,10.038938
+218174,Amsinckstraße/ Nordkanalbrücke,53.547868,10.012361
+218635,Auf dem Sande/Kehrwieder-MiniaturWunderland,53.543731,9.98971
+218636,Schopenstehl/Alter Fischmarkt,53.548703,9.997126
+224650,Leinpfad/Fernsicht,53.580391,9.999404
+226605,Barkassenanleger/Mengestraße,53.499748,9.99647
+226607,Neunenfelder Straße/ Kurt-Emmerich-Platz,53.497232,10.003843
+227415,Wandsbeker Chaussee/ Börnestraße,53.57047,10.059528
+227770,Berta-Kröger-Platz/Wilhelm-Strauß-Weg,53.497933,10.007016
+229760,OTTO Group / Wandsbeker Straße,53.60026,10.070397
+230054,Grasbrookpark/Überseequartier,53.540282,9.997945
+233536,Troplowitzstraße / Beiersdorf  / NXP,53.582793,9.957594
+239807,Bullerdeich/Stadtreinigung Hamburg,53.544979,10.03685
+241777,Reeseberg/EBV-Anzengruberstraße,53.44896,9.990306
+242358,Moorstraße/Bahnhof Harburg,53.457286,9.987994
+242642,Herbert-Wehner-Platz/Großer Schippsee,53.460407,9.983319
+242643,Harburger Ring/Neue Straße,53.4606874,9.9775729
+242645,Harburger Rathausstraße/Deichhausweg,53.4599586,9.9804731
+242727,Kanalplatz/Harburger Schlossstraße,53.4665,9.984148
+242729,Alter Postweg / Heimfelder Straße,53.465276,9.963537
+242730,TU Harburg/Denickestraße,53.460622,9.969487
+242732,Gotthelfweg/Außenmühlenteich,53.447625,9.980675
+242770,Schellerdamm/Hausnummer22,53.464282,9.986136
+242771,Fuhlsbüttler Straße/Hellbrookstraße,53.59146,10.044508
+243616,Bogenstraße / Grindelallee,53.5712,9.977694
+243617,Sophienallee / Sandweg,53.569769,9.94977
+243618,Lappenbergsallee / Bei der Apostelkirche,53.575573,9.944487
+243619,Emil-Andresen-Straße / Lohkoppelweg,53.59285,9.952055
+243620,Herthastraße / Einkaufszentrum Bramfeld,53.611878,10.075913
+243621,Friedrich-Ebert-Damm / Lomerstraße,53.584919,10.079638
+244093,Feldstraße / Marktstraße,53.557414,9.969178
+244935,Caffamacherreihe/Valentinskamp.,53.555722,9.984209
+244936,Sievekingsallee/Sievekingdamm,53.560835,10.052589
+244937,Horner Weg/Morahtstieg,53.555503,10.066926
+244938,Horner Rennbahn/ Meurer Weg,53.554193,10.085077
+244939,Osterbrookplatz/ Süderstraße,53.546932,10.057613
+244942,Mittelweg/Sophienterrasse-NDR,53.576378,9.993122
+244943,Große Rainstraße/Ottenser Hauptstraße,53.552339,9.930344
+244944,Hohenzollernring/Friedensallee,53.55671,9.918508
+244945,Friedensallee/Hegarstraße ( S Bahn Bahrenfeld ) ,53.56026,9.908946
+244946,Dürerstraße/Beslerplatz- S Bahn Othmarschen,53.560395,9.887159
+245203,Alsterdorfer Straße/Fuhlsbüttler Straße,53.62,10.032
+245204,Fuhlsbüttler Straße/Hartzloh,53.601,10.041
+245434,Eißendorfer Pferdeweg/ Asklepios-Klinik Harburg,53.459,9.951
+245452,Versmannstraße/Am Hannoverschen Bahnhof,53.540782,10.006168
+247483,Paul-Ehrlich-Straße/Asklepios Klinik Altona,53.554433,9.900752
+247846,Niendorf Markt/Tibarg,53.6190722,9.9513113
+247847,Nordalbinger Weg/Paul-Sorge-Straße,53.6408352,9.9500955
+247851,Langenhorn Markt/Tangstedter Landstraße,53.6487572,10.0163663
+247852,Weidestraße /Johannes-Prassek-Park,53.5808087,10.0258479
+248511,Habichtstraße/Steilshooper Straße,53.593726,10.0506397
+250340,Hugo-Kirchberg-Straße/Tesa,53.65429,9.98528
+251476,Georg-Wilhelm-Straße/Mankiewicz,53.494,9.99
+252479,Hindenburgstraße/Möringbogen,53.606177,10.012225
+252481,Nordschleswiger Straße/Dulsberg-Nord,53.585813,10.06523
+252483,Grandweg/Veilchenweg,53.589185,9.964681
+252484,Siemersplatz/Kollaustraße,53.600072,9.963929
+252485,Langenfelder Damm/Müggenkampstraße,53.580757,9.938418
+252486,Randstraße/ Stellingen,53.590248,9.919356
+252487,DESY/Notkestraße,53.574537,9.878527
+252488,Große Elbstraße/Van-der-Smissen-Straße,53.543906,9.94246
+252492,Thadenstraße/Holstenstraße,53.555827,9.950708
+252493,Elbchaussee/Teufelsbrück,53.547425,9.862013
+252494,Ohnhorststraße/Klein Flottbek,53.558587,9.86216
+252496,Caspar-Voght-Straße/Sievekingsallee,53.559893,10.061703
+252497,Riedweg/Vierbergen,53.547643,10.095515
+252498,Billstedter Platz/Öjendorfer Weg,53.540096,10.106106
+252499,Manshardtstraße/EKZ Manshardtstraße,53.559215,10.107447
+252500,Osdorfer Landstraße/ Elbe-Einkaufszentrum,53.571629,9.862423
+252788,Alsterdorf Markt/Evangelische Stiftung,53.6120909,10.0239462
+253227,Neuländer Kamp/Eurofins ,53.4616513,10.0041327
+253357,Djarkartaweg/Sengelmannstraße,53.609163,10.022685
+254723,S Nettelnburg/Friedrich-Frank-Bogen,53.488482,10.182199
+254724,Wentorfer Straße/Bezirksamt Bergedorf,53.487427,10.22
+254725,Vierlandenstraße/Johann-Adolf-Hasse-Platz,53.488449,10.210913
+254726,Lohbrügger Markt/Ludwig-Rosenberg-Ring,53.494675,10.206894
+254727,Bahnhof Bergedorf/Johann-Meyer-Straße,53.490496,10.206105
+254728,S Allermöhe/Walter-Rudolphi-Weg,53.490126,10.158515
+255298,Friedrich-Ebert-Damm/Helbingtwiete,53.588172,10.095665
+255299,Charlie-Mills-Straße/Friedrich-Ebert-Damm,53.59145,10.106858
+255302,Rahlstedter Weg/Berner Heerweg,53.606246,10.12021
+255303,Gründgensstraße/César-Klein-Ring,53.610149,10.058096
+255305,Traberweg/Eckerkoppel,53.598017,10.101459
+256467,Röntgenstraße/Philips,53.6234809,10.0122088
+264330,Bleickenallee/Kinderkrankenhaus Altona,53.5512881,9.9129134
+264820,Osterstraße/Heußweg,53.5759831,9.9520709
+264821,Bahrenfelder Chaussee/Von-Sauer-Straße,53.5659729,9.9108696
+268358,Sieldeich/ Gresham Carat Hotel,53.528309,10.021813999999999
+138370,Grindelberg / Bezirksamt Eimsbuettel,53.575384,9.977883
+242731,Maretstrasse / Baererstrasse,53.453659,9.982299
