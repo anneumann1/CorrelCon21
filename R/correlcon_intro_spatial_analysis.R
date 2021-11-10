@@ -55,13 +55,13 @@ hamburg_map <-
        subtitle = "most prominent routes\n for shared bike users")+
   scale_fill_manual(name="Category:",values=c("green space"="seagreen4",
                                               "residential" ="seashell4", 
-                                              "agriculture"="red4",
+                                              "agriculture"="darkred",
                                               "pedestrian"="orange",
-                                              "business"="deeppink3"))+
+                                              "business"="darkorchid4"))+
   scale_color_manual(values=c("green space"="seagreen4",
                               "residential" ="seashell4", 
-                              "agriculture"="red4",
-                              "business"="deeppink3"), guide = "none")+
+                              "agriculture"="darkred",
+                              "business"="darkorchid4"), guide = "none")+
   theme(plot.background = element_rect("#00101f"),
         legend.background = element_rect("#00101f"),
         axis.title = element_blank(),
@@ -121,8 +121,8 @@ station_count_barchart <-
                     values=c("green space"="seagreen4",
                              "residential" ="seashell4", 
                              "pedestrian"="orange",
-                             "business"="deeppink3", 
-                             "agriculture"="red4"),
+                             "business"="darkorchid4", 
+                             "agriculture"="darkred"),
                     guide="none")+
   geom_text(mapping=aes(reorder(cat,-freq),freq,label = scales::percent(freq)),
             colour = "white", 
