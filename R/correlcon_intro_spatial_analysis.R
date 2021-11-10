@@ -139,7 +139,6 @@ station_count_barchart <-
         axis.text = element_blank(),
         axis.ticks = element_blank(),
         panel.background = element_rect("#00101f"),
-        legend.background = element_rect("#00101f"),
         legend.text = element_text(color = "white"),
         legend.title = element_text(color = "white"),
         legend.position = "none",
