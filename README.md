@@ -1,4 +1,5 @@
-# CorrelCon21: Introduction to Spatial Analysis with R
+# CorrelCon21: Introduction to Spatial Analysis with R 
+### by Jasmin Classen and Andreas Neumann
 
 This is the repository containing code and data used in the hands-on session "Introduction to Spatial Analysis with R" during the CorrelCon 2021 on November 13th, 2021.
 
