@@ -131,7 +131,7 @@ station_count_barchart <-
             hjust = -.5)+
   labs(subtitle = "where the bike-stations are located")+
   theme(plot.background = element_rect("#00101f"),
-        legend.background = element_rect("#00101f"),
+        plot.subtitle=element_text(size=12, hjust=0.5, face="italic", color="white"),
         axis.title = element_blank(),
         axis.title.y = element_blank(),
         panel.grid.major = element_blank(),
@@ -139,12 +139,12 @@ station_count_barchart <-
         axis.text = element_blank(),
         axis.ticks = element_blank(),
         panel.background = element_rect("#00101f"),
+        legend.background = element_rect("#00101f"),
         legend.text = element_text(color = "white"),
         legend.title = element_text(color = "white"),
         legend.position = "none",
-        text=element_text(family="Times New Roman", face="bold", size=21),
-        plot.subtitle=element_text(size=12, hjust=0.5, face="italic", color="white"))+
-  coord_flip()
+        text=element_text(family="Times New Roman", face="bold", size=21))+
+coord_flip()
 
 # COMBINE BOTH MAPS -----------------------------------------------
 
