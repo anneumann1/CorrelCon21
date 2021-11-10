@@ -62,20 +62,21 @@ hamburg_map <-
                               "residential" ="seashell4", 
                               "agriculture"="darkred",
                               "business"="darkorchid4"), guide = "none")+
-  theme(plot.background = element_rect("#00101f"),
-        legend.background = element_rect("#00101f"),
-        axis.title = element_blank(),
-        axis.title.y = element_blank(),
-        panel.grid.major = element_blank(),
-        axis.text = element_blank(),
-        axis.ticks = element_blank(),
-        panel.background = element_rect("#00101f"),
-        legend.text = element_text(color = "white",face="italic"),
-        legend.title = element_text(color = "white",face="italic"),
-        legend.position = "bottom",
-        text=element_text(family="Times New Roman", face="bold", size=21),
-        plot.subtitle=element_text(size=12, hjust=0.5, face="italic", color="white"),
-        plot.title = element_text(color="grey85",hjust=.5, face="italic"))
+theme(
+plot.background = element_rect("#00101f"),
+panel.grid.major = element_blank(),
+panel.background = element_rect("#00101f"),
+axis.text = element_blank(),
+axis.ticks = element_blank(),
+axis.title = element_blank(),
+axis.title.y = element_blank(),
+text=element_text(family="Times New Roman", face="bold", size=21),
+plot.subtitle=element_text(size=12, hjust=0.5, face="italic", color="white"),
+plot.title = element_text(color="grey85",hjust=.5, face="italic"),
+legend.background = element_rect("#00101f"),
+legend.text = element_text(color = "white",face="italic"),
+legend.title = element_text(color = "white",face="italic"),
+legend.position = "bottom")
 
 # CREATE BAR CHART -------------------------------------------------------------
 # prepare stations data for matching to landuse --------------------------------
