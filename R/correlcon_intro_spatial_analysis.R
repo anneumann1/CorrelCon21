@@ -8,7 +8,7 @@ library("ggforce")
 library("scales")
 library("glue")
 library("patchwork")
-library(extrafont)
+library("extrafont")
 font_import()
 loadfonts(device="win")
 
