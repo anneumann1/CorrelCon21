@@ -25,10 +25,9 @@ land_use <- st_set_crs(land_use, 4326)
 
 # clean up landuse categories
 land_use$cat <- case_when(
-  str_detect(land_use$fclass, "allotments|forest|grass|heath|meadow|nature_reserve|park|recreation_ground|scrub|park|orchard|cemetery") ~ "green space",
+  str_detect(land_use$fclass, "allotments|forest|grass|heath|meadow|nature_reserve|park|recreation_ground|scrub|park|orchard|cemetery|farmland|farmyard|vineyard") ~ "green space",
   str_detect(land_use$fclass, "retail|commercial|industrial|quarry") ~ "business",
-  str_detect(land_use$fclass, "residential|military") ~ "residential",
-  str_detect(land_use$fclass, "farmland|farmyard|vineyard") ~ "agriculture")  
+  str_detect(land_use$fclass, "residential|military") ~ "residential")  
 
 # sample path data because otherwise it will crash your computer when plotting
 set.seed(123)
@@ -55,12 +54,9 @@ hamburg_map <-
        subtitle = "most prominent routes\n for shared bike users")+
   scale_fill_manual(name="Category:",values=c("green space"="seagreen4",
                                               "residential" ="seashell4", 
-                                              "agriculture"="darkred",
-                                              "pedestrian"="orange",
                                               "business"="darkorchid4"))+
   scale_color_manual(values=c("green space"="seagreen4",
                               "residential" ="seashell4", 
-                              "agriculture"="darkred",
                               "business"="darkorchid4"), guide = "none")+
 theme(
 plot.background = element_rect("#00101f"),
@@ -114,34 +110,33 @@ station_landuse_count$cat[is.na(station_landuse_count$cat)] <- "pedestrian"
 # CREATE MAP WITH BARCHAPRT ---------------------------------------------------
 station_count_barchart <-
   ggplot(station_landuse_count) +
-  geom_bar(mapping=aes(reorder(cat,-freq),freq,fill=cat),
+  geom_bar(mapping=aes(reorder(cat,-freq),freq,fill=cat),stat="identity",width=.25,alpha=.4,col="white")+
            stat="identity",
            width=.25,
            alpha=.4)+
   scale_fill_manual(name="Category:",
                     values=c("green space"="seagreen4",
                              "residential" ="seashell4", 
-                             "pedestrian"="orange",
-                             "business"="darkorchid4", 
-                             "agriculture"="darkred"),
+                             "unclassified"="#00101f",
+                             "business"="darkorchid4"),
                     guide="none")+
   geom_text(mapping=aes(reorder(cat,-freq),freq,label = scales::percent(freq)),
             colour = "white", 
             size = 4,
             hjust = -.5)+
   labs(subtitle = "where the bike-stations are located")+
-  theme(legend.position = "none",
-    plot.background = element_rect("#00101f"),
-        plot.subtitle=element_text(size=12, hjust=0.5, face="italic", color="white"),
-        axis.title = element_blank(),
+  theme(
+      plot.subtitle=element_text(size=18, hjust=0.5, face="italic", color="white"),
+      axis.title = element_blank(),
         axis.title.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.text.x = element_text(size=17, face="italic",angle=-30,hjust = .48,vjust = -.8,color="white"),
+        axis.ticks = element_blank(),
+        plot.background = element_rect("#00101f"),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
-        axis.text = element_blank(),
-        axis.ticks = element_blank(),
         panel.background = element_rect("#00101f"),
-        text=element_text(family="Times New Roman", face="bold", size=21))+
-coord_flip()
+        text=element_text(family="Times New Roman", face="bold", size=21))
 
 # COMBINE BOTH MAPS -----------------------------------------------
 
