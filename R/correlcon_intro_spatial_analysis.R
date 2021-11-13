@@ -92,7 +92,7 @@ station_landuse_count <- intersections %>%
 # rename NAs
 # we are missing quite a few polygons in Hamburg city center, make them
 # pedestrian
-station_landuse_count$cat[is.na(station_landuse_count$cat)] <- "pedestrian"
+station_landuse_count$cat[is.na(station_landuse_count$cat)] <- "unclassified"
 
 # CREATE MAP WITH BARCHAPRT ---------------------------------------------------
 station_count_barchart <-
