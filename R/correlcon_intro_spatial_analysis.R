@@ -38,26 +38,13 @@ shortest_cycle_paths_sampled <- shortest_cycle_paths %>%
 # CREATE MAP ------------------------------------------------------------------
 
 hamburg_map <-
-  ggplot()+
-  geom_sf(land_use,
-          mapping=aes(fill=cat,col=cat),
-          alpha = .4)+
-  geom_point(bikeshare_station,
-             mapping=aes(x=lon,y=lat),
-             col="white",
-             shape = 4,size=2,
-             alpha=5)+
-  geom_sf(shortest_cycle_paths_sampled,
-          mapping=aes(geometry=geom_bike),
-          col=alpha("white",5))+
-  labs(title = "HAMBURG´s",
-       subtitle = "most prominent routes\n for shared bike users")+
-  scale_fill_manual(name="Category:",values=c("green space"="seagreen4",
-                                              "residential" ="seashell4", 
-                                              "business"="darkorchid4"))+
-  scale_color_manual(values=c("green space"="seagreen4",
-                              "residential" ="seashell4", 
-                              "business"="darkorchid4"), guide = "none")+
+ggplot()+
+geom_sf(land_use,mapping=aes(fill=cat,col=cat),alpha = .4)+
+geom_point(bikeshare_station,mapping=aes(x=lon,y=lat),col="white",shape = 4,size=2,alpha=5)+
+geom_sf(shortest_cycle_paths_sampled ,mapping=aes(geometry=geom_bike),col=alpha("white",5))+
+labs(title = "\nHAMBURG´s",subtitle = "most prominent routes for shared bike users",caption=glue("Andreas Neumann & Jasmin Classen"))+
+scale_fill_manual(name="Category:",values=c("green space"="seagreen4","residential" ="seashell4","business"="darkorchid4"),guide="none")+
+scale_color_manual(values=c("green space"="seagreen4","residential" = "seashell4","business"="darkorchid4"), guide = "none")
 theme(
 plot.background = element_rect("#00101f"),
 panel.grid.major = element_blank(),
