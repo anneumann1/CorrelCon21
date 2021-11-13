@@ -44,7 +44,7 @@ geom_point(bikeshare_station,mapping=aes(x=lon,y=lat),col="white",shape = 4,size
 geom_sf(shortest_cycle_paths_sampled ,mapping=aes(geometry=geom_bike),col=alpha("white",5))+
 labs(title = "\nHAMBURG´s",subtitle = "most prominent routes for shared bike users",caption=glue("Andreas Neumann & Jasmin Classen"))+
 scale_fill_manual(name="Category:",values=c("green space"="seagreen4","residential" ="seashell4","business"="darkorchid4"),guide="none")+
-scale_color_manual(values=c("green space"="seagreen4","residential" = "seashell4","business"="darkorchid4"), guide = "none")
+scale_color_manual(values=c("green space"="seagreen4","residential" = "seashell4","business"="darkorchid4"), guide = "none")+
 theme(
 plot.background = element_rect("#00101f"),
 panel.grid.major = element_blank(),
@@ -97,24 +97,12 @@ station_landuse_count$cat[is.na(station_landuse_count$cat)] <- "pedestrian"
 # CREATE MAP WITH BARCHAPRT ---------------------------------------------------
 station_count_barchart <-
   ggplot(station_landuse_count) +
-  geom_bar(mapping=aes(reorder(cat,-freq),freq,fill=cat),stat="identity",width=.25,alpha=.4,col="white")+
-           stat="identity",
-           width=.25,
-           alpha=.4)+
-  scale_fill_manual(name="Category:",
-                    values=c("green space"="seagreen4",
-                             "residential" ="seashell4", 
-                             "unclassified"="#00101f",
-                             "business"="darkorchid4"),
-                    guide="none")+
-  geom_text(mapping=aes(reorder(cat,-freq),freq,label = scales::percent(freq)),
-            colour = "white", 
-            size = 4,
-            hjust = -.5)+
-  labs(subtitle = "where the bike-stations are located")+
-  theme(
-      plot.subtitle=element_text(size=18, hjust=0.5, face="italic", color="white"),
-      axis.title = element_blank(),
+geom_bar(mapping=aes(reorder(cat,-freq),freq,fill=cat),stat="identity",width=.25,alpha=.4,col="white")+
+labs(subtitle = "where the bike-stations are located")+
+scale_fill_manual(name="Category:",values=c("green space"="seagreen4","residential" ="seashell4", "unclassified"="#00101f","business"="darkorchid4"),guide="none")+
+geom_text(mapping=aes(reorder(cat,-freq),freq,label = scales::percent(freq)),colour = "white",size = 4,vjust = -.8)+
+  theme(plot.subtitle=element_text(size=18, hjust=0.5, face="italic", color="white"),
+        axis.title = element_blank(),
         axis.title.y = element_blank(),
         axis.text.y = element_blank(),
         axis.text.x = element_text(size=17, face="italic",angle=-30,hjust = .48,vjust = -.8,color="white"),
