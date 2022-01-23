@@ -103,7 +103,6 @@ scale_fill_manual(name="Category:",values=c("green space"="seagreen4","residenti
 geom_text(mapping=aes(reorder(cat,-freq),freq,label = scales::percent(freq)),colour = "white",size = 4,vjust = -.8)+
   theme(plot.subtitle=element_text(size=18, hjust=0.5, face="italic", color="white"),
         axis.title = element_blank(),
-        axis.title.y = element_blank(),
         axis.text.y = element_blank(),
         axis.text.x = element_text(size=17, face="italic",angle=-30,hjust = .48,vjust = -.8,color="white"),
         axis.ticks = element_blank(),
