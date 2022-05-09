@@ -27,8 +27,8 @@ ggplot2
 ggforce
 scales
 glue
-"patchwork")
-extrafont)
+patchwork
+extrafont
 
 stplanr # for creating straight lines between stations
 cyclestreets # the R package that connects to the cycle streets api
